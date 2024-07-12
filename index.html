@@ -28,19 +28,23 @@
               <li class="header__nav-link">
                 <a href="#">about us</a>
               </li>
-              <div class="header__nav-delimiter"></div>
+              <li class="header__nav-delimiter"></li>
               <li class="header__nav-link">
                 <a href="#">contact us</a>
               </li>
-              <div class="header__nav-delimiter"></div>
+              <li class="header__nav-delimiter"></li>
               <li class="header__nav-link"><a href="#">blog</a></li>
-              <div class="header__nav-delimiter"></div>
+              <li class="header__nav-delimiter"></li>
               <li class="header__nav-link">
                 <a href="#">site map</a>
               </li>
-              <div class="header__nav-delimiter"></div>
+              <li class="header__nav-delimiter"></li>
               <li class="header__nav-link--select">
-                <select name="language-select" id="language-select">
+                <select
+                  name="language-select"
+                  id="language-select"
+                  aria-label="language select"
+                >
                   <option value="english">Eng</option>
                 </select>
                 <svg
@@ -70,7 +74,11 @@
             placeholder="Search this site"
             aria-label="Search this site"
           />
-          <button class="header__search-button" value="Search">
+          <button
+            class="header__search-button"
+            value="Search"
+            aria-label="search"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -265,7 +273,7 @@
                   >
                   <div class="contact-us__complex-input">
                     <div>
-                      <select name="code" id="code">
+                      <select name="code" id="code" aria-label="country code">
                         <option value="ukr">+380</option>
                       </select>
                       <svg
@@ -383,7 +391,7 @@
             </ul>
           </div>
           <div class="footer__content-right">
-            <h4 class="footer__content-right-contacts">Contacts</h4>
+            <h3 class="footer__content-right-contacts">Contacts</h3>
             <a href="tel:+380630720121" class="footer__content-right-tel"
               >+38 063 072 0121</a
             >
