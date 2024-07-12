@@ -1,0 +1,122 @@
+.header {
+  width: 100%;
+  padding: 1.6rem 6.4rem;
+
+  &__container {
+    @include max-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.8rem;
+  }
+
+  &__nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 56.2rem;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-links {
+    width: 100%;
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+  }
+
+  &__nav-link {
+    @extend .text-body-m;
+    text-transform: capitalize;
+    list-style: none;
+
+    a {
+      text-decoration: none;
+      text-wrap: nowrap;
+    }
+
+    &--select {
+      @extend .header__nav-link;
+      @extend .custom-select;
+    }
+  }
+
+  &__nav-delimiter {
+    height: 1.6rem;
+    width: 0.1rem;
+    background-color: $color-black;
+  }
+
+  &__logo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0.2rem;
+    width: 3.4rem;
+    height: 3.4rem;
+
+    &--sq-empty {
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+      border: 0.2rem solid $color-primary;
+      border-radius: 0.2rem;
+    }
+
+    &--sq-filled {
+      grid-row: 2 / 3;
+      grid-column: 2 / 3;
+      border-radius: 0.2rem;
+      background-color: $color-primary;
+    }
+  }
+
+  .header__searchbar {
+    display: flex;
+    width: 100%;
+    max-width: 42.4rem;
+    height: 100%;
+  }
+
+  .header__search-input {
+    width: 100%;
+    max-width: 37.6rem;
+    height: 100%;
+    border: 0.2rem solid $color-primary;
+    border-radius: 0.2rem 0 0 0.2rem;
+    padding: 1.1rem 1.6rem;
+    outline: none;
+
+    &::placeholder {
+      @extend .text-body-m;
+      color: $color-primary-light;
+    }
+
+    &:focus {
+      border: 0.2rem solid lighten($color-primary, 10%);
+    }
+  }
+
+  .header__search-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: $color-primary;
+    width: 4.8rem;
+    border-radius: 0 0.2rem 0.2rem 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: lighten($color-primary, 5%);
+    }
+
+    &:active {
+      background-color: lighten($color-primary, 10%);
+    }
+  }
+}

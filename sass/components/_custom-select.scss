@@ -1,0 +1,18 @@
+.custom-select {
+  position: relative;
+
+  select {
+    cursor: pointer;
+    border: none;
+    padding-right: 3rem;
+    appearance: none;
+  }
+
+  svg {
+    position: absolute;
+    top: 50%;
+    translate: 0 -50%;
+    left: 3.5rem;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,32 @@
+.custom-card {
+  padding: 2.4rem 2.4rem 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.8rem;
+
+  &__image {
+    flex: 1 0 18rem;
+    background-size: cover;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    @extend .text-body-m--b;
+    text-transform: capitalize;
+    margin-bottom: 1.2rem;
+  }
+
+  &__paragraph {
+    @extend .text-body-s;
+    margin-bottom: 2.3rem;
+  }
+
+  &__link {
+    @extend .text-body-s--b;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,37 @@
+.text-body-m {
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  &--b {
+    @extend .text-body-m;
+    font-weight: 700;
+  }
+}
+
+.text-body-s {
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  &--b {
+    @extend .text-body-s;
+    font-weight: 700;
+  }
+}
+
+.text-title {
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.text-subtitle {
+  font-size: 2.4rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+}

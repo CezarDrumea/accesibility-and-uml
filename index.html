@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- OUTFIT FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Accesibility & UML</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header__nav-wrapper">
+          <div class="header__logo">
+            <div class="header__logo--sq-empty"></div>
+            <div class="header__logo--sq-filled"></div>
+          </div>
+          <nav class="header__nav">
+            <ul class="header__nav-links">
+              <li class="header__nav-link">
+                <a href="#">about us</a>
+              </li>
+              <div class="header__nav-delimiter"></div>
+              <li class="header__nav-link">
+                <a href="#">contact us</a>
+              </li>
+              <div class="header__nav-delimiter"></div>
+              <li class="header__nav-link"><a href="#">blog</a></li>
+              <div class="header__nav-delimiter"></div>
+              <li class="header__nav-link">
+                <a href="#">site map</a>
+              </li>
+              <div class="header__nav-delimiter"></div>
+              <li class="header__nav-link--select">
+                <select name="language-select" id="language-select">
+                  <option value="english">Eng</option>
+                </select>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M17 10L12 15L7 10"
+                    stroke="#111111"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <form action="" class="header__searchbar">
+          <input
+            type="text"
+            class="header__search-input text-body-m"
+            placeholder="Search this site"
+            aria-label="Search this site"
+          />
+          <button class="header__search-button" value="Search">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+            >
+              <path
+                d="M25.5 25.5L21.014 21.006L25.5 25.5ZM23.5 15C23.5 17.2543 22.6045 19.4163 21.0104 21.0104C19.4163 22.6045 17.2543 23.5 15 23.5C12.7457 23.5 10.5837 22.6045 8.98959 21.0104C7.39553 19.4163 6.5 17.2543 6.5 15C6.5 12.7457 7.39553 10.5837 8.98959 8.98959C10.5837 7.39553 12.7457 6.5 15 6.5C17.2543 6.5 19.4163 7.39553 21.0104 8.98959C22.6045 10.5837 23.5 12.7457 23.5 15V15Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero__container">
+        <div class="hero__content">
+          <div class="hero__description">
+            <h1 class="hero__title text-title">Lorem ipsum dolor sit amet</h1>
+            <h2 class="hero__subtitle text-subtitle">
+              Lorem ipsum folor sit amet
+            </h2>
+            <p class="hero__paragraph text-body-s">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
+              tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
+              tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies.
+              Urna hendrerit morbi sed gravida. Nulla aliquam ac diam amet,
+              sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <button class="hero__buy-now">Buy Now</button>
+          </div>
+          <div
+            class="hero__image"
+            role="img"
+            aria-label="An image with plants"
+          ></div>
+        </div>
+      </section>
+
+      <section class="about-us">
+        <div class="about-us__container">
+          <div class="about-us__content-card">
+            <div
+              class="about-us__image"
+              role="img"
+              aria-label="An image with plants"
+            ></div>
+            <div class="about-us__description">
+              <h3 class="about-us__title">about us</h3>
+              <p class="about-us__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Eleifend tincidunt posuere eu risus cursus. Senectus sed
+                maecenas viverra tempus at. Nulla aliquam ac diam amet,
+                sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Nulla
+                aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit
+                morbi sed gravida. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Eleifend tincidunt posuere eu risus cursus.
+              </p>
+              <a href="#" class="about-us__link"
+                ><span>Learn more about</span> <span>→</span></a
+              >
+            </div>
+          </div>
+          <div class="about-us__content-card">
+            <div
+              class="about-us__image"
+              role="img"
+              aria-label="An image with plants"
+            ></div>
+            <div class="about-us__description">
+              <h3 class="about-us__title">about us 2</h3>
+              <p class="about-us__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Eleifend tincidunt posuere eu risus cursus. Senectus sed
+                maecenas viverra tempus at. Nulla aliquam ac diam amet,
+                sagittis, ut ultricies. Urna hendrerit morbi sed gravida. Nulla
+                aliquam ac diam amet, sagittis, ut ultricies. Urna hendrerit
+                morbi sed gravida. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit. Eleifend tincidunt posuere eu risus cursus.
+              </p>
+              <a href="#" class="about-us__link"
+                ><span>Learn more about</span> <span>→</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-us">
+        <div class="contact-us__container">
+          <div class="contact-us__description">
+            <h2 class="contact-us__title">contact us</h2>
+            <p class="contact-us__paragraph">
+              Fill up the form and ur Team will get back to you within 24 hours.
+              Happy to see your message!
+            </p>
+            <div class="contact-us__details">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M22.5 12.0643C22.5 6.22966 17.7992 1.5 12.0013 1.5C6.20079 1.50131 1.5 6.22966 1.5 12.0656C1.5 17.3373 5.33989 21.7073 10.3583 22.5V15.1181H7.69422V12.0656H10.3609V9.73622C10.3609 7.08924 11.9291 5.6273 14.3268 5.6273C15.4764 5.6273 16.6772 5.83333 16.6772 5.83333V8.43176H15.353C14.0499 8.43176 13.643 9.24672 13.643 10.0827V12.0643H16.5538L16.0892 15.1168H13.6417V22.4987C18.6601 21.706 22.5 17.336 22.5 12.0643Z"
+                  fill="#111111"
+                />
+              </svg>
+              <p class="contact-us__details-text">+380 93 15 32 456</p>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M22.5 12.0643C22.5 6.22966 17.7992 1.5 12.0013 1.5C6.20079 1.50131 1.5 6.22966 1.5 12.0656C1.5 17.3373 5.33989 21.7073 10.3583 22.5V15.1181H7.69422V12.0656H10.3609V9.73622C10.3609 7.08924 11.9291 5.6273 14.3268 5.6273C15.4764 5.6273 16.6772 5.83333 16.6772 5.83333V8.43176H15.353C14.0499 8.43176 13.643 9.24672 13.643 10.0827V12.0643H16.5538L16.0892 15.1168H13.6417V22.4987C18.6601 21.706 22.5 17.336 22.5 12.0643Z"
+                  fill="#111111"
+                />
+              </svg>
+              <p class="contact-us__details-text">example@gmail.com</p>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M22.5 12.0643C22.5 6.22966 17.7992 1.5 12.0013 1.5C6.20079 1.50131 1.5 6.22966 1.5 12.0656C1.5 17.3373 5.33989 21.7073 10.3583 22.5V15.1181H7.69422V12.0656H10.3609V9.73622C10.3609 7.08924 11.9291 5.6273 14.3268 5.6273C15.4764 5.6273 16.6772 5.83333 16.6772 5.83333V8.43176H15.353C14.0499 8.43176 13.643 9.24672 13.643 10.0827V12.0643H16.5538L16.0892 15.1168H13.6417V22.4987C18.6601 21.706 22.5 17.336 22.5 12.0643Z"
+                  fill="#111111"
+                />
+              </svg>
+              <p class="contact-us__details-text">Pidmurma 5a, Lviv</p>
+            </div>
+          </div>
+          <div class="contact-us__details-form">
+            <form action="" class="contact-us__form">
+              <fieldset class="contact-us__text-inputs">
+                <div class="contact-us__input-container">
+                  <label for="firstName" class="contact-us__input-label"
+                    ><span>*</span> First Name</label
+                  >
+                  <input
+                    type="text"
+                    name="firstName"
+                    id="firstName"
+                    class="contact-us__input"
+                    placeholder="John"
+                    required
+                  />
+                </div>
+                <div class="contact-us__input-container">
+                  <label for="lastName" class="contact-us__input-label"
+                    ><span>*</span> Last Name</label
+                  >
+                  <input
+                    type="text"
+                    name="lastName"
+                    id="lastName"
+                    class="contact-us__input"
+                    placeholder="Doe"
+                    required
+                  />
+                </div>
+                <div class="contact-us__input-container">
+                  <label for="email" class="contact-us__input-label"
+                    >Email</label
+                  >
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    class="contact-us__input"
+                    placeholder="example@gmail.com"
+                  />
+                </div>
+                <div class="contact-us__input-container">
+                  <label for="tel" class="contact-us__input-label"
+                    >Phone Number</label
+                  >
+                  <div class="contact-us__complex-input">
+                    <div>
+                      <select name="code" id="code">
+                        <option value="ukr">+380</option>
+                      </select>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M17 10L12 15L7 10"
+                          stroke="#111111"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div class="contact-us__complex-input-delimiter"></div>
+                    <input
+                      type="text"
+                      name="tel"
+                      id="tel"
+                      placeholder="00 000 00 00"
+                    />
+                  </div>
+                </div>
+              </fieldset>
+              <filedset class="contact-us__radio-inputs">
+                <label class="contact-us__radio-label">
+                  <input type="radio" name="radio" checked />
+                  <div></div>
+                  <span>UI Developer</span>
+                </label>
+                <label class="contact-us__radio-label">
+                  <input type="radio" name="radio" />
+                  <div></div>
+                  <span>UI/UX Designer</span>
+                </label>
+                <label class="contact-us__radio-label">
+                  <input type="radio" name="radio" />
+                  <div></div>
+                  <span> Accessibility Expert</span>
+                </label>
+                <label class="contact-us__radio-label">
+                  <input type="radio" name="radio" />
+                  <div></div>
+                  <span>QA Engineer</span>
+                </label>
+                <label class="contact-us__radio-label">
+                  <input type="radio" name="radio" />
+                  <div></div>
+                  <span>Other</span>
+                </label>
+              </filedset>
+              <fieldset class="contact-us__textarea-container">
+                <label for="message" class="contact-us__textarea-label"
+                  >Message</label
+                >
+                <textarea
+                  name="message"
+                  id="message"
+                  class="contact-us__textarea"
+                  placeholder="Text here..."
+                ></textarea>
+              </fieldset>
+              <fiedlset class="contact-us__checkboxes">
+                <label class="contact-us__checkbox-label">
+                  <input type="checkbox" name="terms1" id="terms1" />
+                  <div></div>
+                  <span>Accept the Terms</span>
+                </label>
+                <label class="contact-us__checkbox-label">
+                  <input type="checkbox" name="terms2" id="terms2" />
+                  <div></div>
+                  <span>Accept the Terms 2</span>
+                </label>
+              </fiedlset>
+              <button class="contact-us__submit">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="footer__content">
+        <div class="footer__content-container">
+          <div class="footer__content-left">
+            <h2 class="footer__content-left-title">plant me</h2>
+            <p class="footer__content-left-paragraph">
+              Subscribe and be the first to know about our news and promotions.
+            </p>
+            <form action="" class="footer__content-left-search">
+              <input
+                type="text"
+                class="footer__content-left-input"
+                placeholder="example@gmail.com"
+              />
+              <button class="footer__content-left-button">Subscribe</button>
+            </form>
+          </div>
+          <div class="footer__content-middle">
+            <ul class="footer__content-middle-links">
+              <li class="footer__content-middle-link">
+                <a href="#">about us</a>
+              </li>
+              <li class="footer__content-middle-link">
+                <a href="#">contact us</a>
+              </li>
+              <li class="footer__content-middle-link"><a href="#">blog</a></li>
+              <li class="footer__content-middle-link">
+                <a href="#">site map</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__content-right">
+            <h4 class="footer__content-right-contacts">Contacts</h4>
+            <a href="tel:+380630720121" class="footer__content-right-tel"
+              >+38 063 072 0121</a
+            >
+            <a
+              href="mailto:plantme.store@gmail.com"
+              class="footer__content-right-mail"
+              >plantme.store@gmail.com</a
+            >
+            <div class="footer__content-right-imgs">
+              <img src="./img/visa.png" alt="visa logo" />
+              <img src="./img/mastercard.png" alt="mastercard logo" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="footer__divider"></div>
+      <section class="footer__copyright">
+        <p class="footer__copyright-text">
+          © 2022 PlantMe. All Rights Reserved
+        </p>
+        <ul class="footer__copyright-links">
+          <li class="footer__copyright-link"><a href="#">Privacy Policy</a></li>
+          <li class="footer__copyright-link">
+            <a href="#">Terms of service</a>
+          </li>
+          <li class="footer__copyright-link"><a href="#">Language</a></li>
+        </ul>
+      </section>
+    </footer>
+  </body>
+</html>

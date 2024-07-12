@@ -1,0 +1,46 @@
+.about-us {
+  padding: 8rem 6.4rem;
+
+  &__container {
+    @include max-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.8rem;
+  }
+
+  &__content-card {
+    @extend .custom-card;
+    background-color: $color-primary;
+  }
+
+  &__image {
+    @extend .custom-card__image;
+    background-image: url(../../img/small-leafs.jpeg);
+  }
+
+  &__title {
+    @extend .custom-card__title;
+    color: $color-white;
+  }
+
+  &__paragraph {
+    @extend .custom-card__paragraph;
+    color: $color-white;
+  }
+
+  &__link:link,
+  &__link:visited,
+  &__link:active {
+    @extend .custom-card__link;
+    color: $color-white;
+
+    span:first-child {
+      text-decoration: underline;
+    }
+
+    span:last-child {
+      text-decoration: none;
+    }
+  }
+}

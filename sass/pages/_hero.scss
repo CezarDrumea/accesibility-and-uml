@@ -1,0 +1,47 @@
+.hero {
+  &__container {
+    background-color: $color-gray-light-1;
+    padding: 2.4rem 6.4rem 6rem;
+  }
+
+  &__content {
+    @include max-width;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 1.8rem;
+  }
+
+  &__description {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: $color-primary;
+    margin-bottom: 3.6rem;
+  }
+
+  &__subtitle {
+    color: $color-primary;
+    margin-bottom: 1.2rem;
+  }
+
+  &__paragraph {
+    margin-bottom: 3.6rem;
+    max-width: 53.6rem;
+  }
+
+  &__image {
+    width: 50%;
+    aspect-ratio: 1;
+    background-image: url(../../img/leafs.jpeg);
+    background-size: cover;
+  }
+
+  &__buy-now {
+    @extend .custom-button;
+  }
+}
